@@ -21,5 +21,5 @@ jobs:
       - run: cp -r /tmp/examples .
       - run: git add .
       - run: git commit -m 'add examples github actions'
-      - run: rm /tmp/examples 
+      - run: rm -rf /tmp/examples 
 

@@ -14,4 +14,12 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
+      - run: |
+          cp -r docs/example /tmp,
+          git checkout gh-page,
+          cp -r /tmp/example .,
+          git add .,
+          git commit -m 'add examples github actions',
+          rm /tmp/example
+
 

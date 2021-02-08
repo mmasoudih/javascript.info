@@ -1,0 +1,23 @@
+site_name: ترجمه سایت javascript.info
+
+theme:
+  name: 'material'
+  language: 'fa'
+  direction: 'rtl'
+  theme:
+  palette:
+    primary: light blue
+    accent: 'red'
+  font: true
+  feature:
+    tabs: true
+extra_css:
+  - 'stylesheets/extra.css'
+
+nav:
+- صفحه اصلی: 'index.md'
+- مقدمه‌ای بر جاوا اسکریپت: '001-introduction/0-An_Introduction_to_JavaScript.md'
+
+-  معرفی منابع مفید: '001-introduction/1-Manuals_Specifications.md'
+- ویرایشگر کد: '001-introduction/2-Code_Editors.md'
+

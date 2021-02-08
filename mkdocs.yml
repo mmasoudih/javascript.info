@@ -16,8 +16,10 @@ extra_css:
 
 nav:
 - صفحه اصلی: 'index.md'
-- مقدمه‌ای بر جاوا اسکریپت: '001-introduction/0-An_Introduction_to_JavaScript.md'
+- مقدمات جاوا اسکریپت :
 
--  معرفی منابع مفید: '001-introduction/1-Manuals_Specifications.md'
-- ویرایشگر کد: '001-introduction/2-Code_Editors.md'
+	- مقدمه‌ای بر جاوا اسکریپت: '001-introduction/0-An_Introduction_to_JavaScript.md'
+	-  معرفی منابع مفید: '001-introduction/1-Manuals_Specifications.md'
+	- ویرایشگر کد: '001-introduction/2-Code_Editors.md'
+	- کنسول مرورگر : '001-introduction/3-Developer_Console.md'
 

@@ -21,4 +21,6 @@ nav:
   - معرفی منابع مفید: '001-introduction/1-Manuals_Specifications.md'
   - ویرایشگر کد: '001-introduction/2-Code_Editors.md'
   - کنسول مرورگر : '001-introduction/3-Developer_Console.md'
+- پایه جاوا اسکریپت :
+  - سلام دنیا! : '002-javascript-fundamentals/hello_world.md'
 

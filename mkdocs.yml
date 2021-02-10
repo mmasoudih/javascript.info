@@ -6,7 +6,7 @@ theme:
   direction: 'rtl'
   theme:
   palette:
-    primary: light blue
+    primary: green
     accent: 'red'
   font: true
   feature:
@@ -17,10 +17,11 @@ extra_css:
 nav:
 - صفحه اصلی : 'index.md'
 - مقدمات  :
-  - مقدمه‌ای بر جاوا اسکریپت: '001-introduction/0-An_Introduction_to_JavaScript.md'
-  - معرفی منابع مفید: '001-introduction/1-Manuals_Specifications.md'
-  - ویرایشگر کد: '001-introduction/2-Code_Editors.md'
-  - کنسول مرورگر : '001-introduction/3-Developer_Console.md'
+  - مقدمه‌ای بر جاوا اسکریپت: 'part-one-introduction/0-An_Introduction_to_JavaScript.md'
+  - معرفی منابع مفید: 'part-one-introduction/1-Manuals_Specifications.md'
+  - ویرایشگر کد: 'part-one-introduction/2-Code_Editors.md'
+  - کنسول مرورگر : 'part-one-introduction/3-Developer_Console.md'
 - پایه جاوا اسکریپت :
-  - سلام دنیا! : '002-javascript-fundamentals/hello_world.md'
+  - سلام دنیا! : 'part-two-javascript-fundamentals/hello_world.md'
+  - ساختار کد:‌ 'part-two-javascript-fundamentals/structure.md'
 

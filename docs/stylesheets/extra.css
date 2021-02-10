@@ -19,3 +19,13 @@ body {
 ::placeholder {
     font-family: vazir;
 }
+.button {
+    padding: 10px 30px;
+}
+.button-outline {
+    border: 2px solid black;
+    transition: all .3s !important;
+}
+.button-outline:hover {
+    background: black;
+}

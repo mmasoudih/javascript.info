@@ -24,4 +24,4 @@ nav:
 - پایه جاوا اسکریپت :
   - سلام دنیا! : 'part-two-javascript-fundamentals/hello_world.md'
   - ساختار کد: 'part-two-javascript-fundamentals/structure.md'
-
+  - حالت سخت‌ گیرانه : 'part-two-javascript-fundamentals/use_strict.md'

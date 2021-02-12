@@ -8,6 +8,7 @@
  
 
 </div>
+
 ### An introduction
 
 - [x] An Introduction to JavaScript
@@ -25,6 +26,7 @@
 
 - [x] Code structure
 
+- [x] Strict Mode
 
 [javascript.info](https://javascript.info)
 

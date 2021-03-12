@@ -28,6 +28,9 @@
 
 - [x] Strict Mode
 
+- [x] Variables 
+
+
 [javascript.info](https://javascript.info)
 
 

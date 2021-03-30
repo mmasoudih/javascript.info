@@ -104,7 +104,7 @@ let phrase = `can embed another ${str}`;
 
 - Double qoutes مانند "Hello".
 - Single qoutes مانند 'Hello'.
-- Backticks مانند `Hello`.
+- Backticks مانند `` `Hello` ``.
 
 دابل و سینگل‌ کوتِیشِن ساده هستن و فرقی ندارن با هم دیگه توی جاوااسکریپت 
 

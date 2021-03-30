@@ -30,6 +30,8 @@
 
 - [x] Variables 
 
+- [x] Data Types
+
 
 [javascript.info](https://javascript.info)
 

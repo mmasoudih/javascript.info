@@ -31,7 +31,7 @@ n = 12.345;
 `Infinity` , `-Infinity`, `NaN` 
  
 
-بی‌نهایت (Infinity) نشان دهنده  (https://fa.wikipedia.org/wiki/%D8%A8%DB%8C%E2%80%8C%D9%86%D9%87%D8%A7%DB%8C%D8%AA)[Infinity] ∞ ریاضی هست این مقدار خاص هست که از هر عددی بیشتره 
+بی‌نهایت (Infinity) نشان دهنده  [Infinity](https://fa.wikipedia.org/wiki/%D8%A8%DB%8C%E2%80%8C%D9%86%D9%87%D8%A7%DB%8C%D8%AA) ∞ ریاضی هست این مقدار خاص هست که از هر عددی بیشتره 
 
 می‌تونیم اونو در نتیجه تقسیم بر صفر بدست بیاریم:
 
@@ -87,7 +87,7 @@ const bigInt = 1234567890123456789012345678901234567890n;
  
 در حال حاضر BigInt توسط مرورگر های FireFox/Chrome/Edge/Safari پشتیبانی میشه و همون طور که میتونین حدس بزنین مرورگر IE پشتیبانیش نمیکنه 
 
-توی (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#browser_compatibility)[این لینک] هم میتونین چک کنین که دقیقا روی چه ورژن هایی از مرورگر ها پشتیبانی میشه
+توی [این لینک](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#browser_compatibility) هم میتونین چک کنین که دقیقا روی چه ورژن هایی از مرورگر ها پشتیبانی میشه
 
 
 ### رشته(String)

@@ -11,26 +11,26 @@
 
 ### An introduction
 
-- [x] An Introduction to JavaScript
+- [x] [An Introduction to JavaScript](https://mmasoudih.github.io/javascript.info/part-one-introduction/0-An_Introduction_to_JavaScript/)
 
-- [x] Manuals and specifications
+- [x] [Manuals and specifications](https://mmasoudih.github.io/javascript.info/part-one-introduction/1-Manuals_Specifications/)
 
-- [x] Code editors
+- [x] [Code editors](https://mmasoudih.github.io/javascript.info/part-one-introduction/2-Code_Editors/)
 
-- [x] Developer console
+- [x] [Developer console](https://mmasoudih.github.io/javascript.info/part-one-introduction/3-Developer_Console/)
 
 
 ### JavaScript Fundamentals
 
-- [x] Hello, world!
+- [x] [Hello, world!](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/hello_world/)
 
-- [x] Code structure
+- [x] [Code structure](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/structure/)
 
-- [x] Strict Mode
+- [x] [Strict Mode](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/use_strict/)
 
-- [x] Variables 
+- [x] [Variables](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/variables/)
 
-- [x] Data Types
+- [x] [Data Types](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/data-types/)
 
 
 [javascript.info](https://javascript.info)

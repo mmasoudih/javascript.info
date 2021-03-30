@@ -1,7 +1,8 @@
 @font-face {
 	font-family: vazir;
-	src: url("../fonts/Vazir-Medium-FD.woff");
+	src: url("../fonts/Vazir-Light-FD.woff");
 }
+
 
 body {
     font-family: vazir;

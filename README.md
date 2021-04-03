@@ -32,6 +32,7 @@
 
 - [x] [Data Types](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/data-types/)
 
+- [x] [Interaction: alert, prompt, confirm](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/alert-prompt-confirm/)
 
 [javascript.info](https://javascript.info)
 

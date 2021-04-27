@@ -28,3 +28,4 @@ nav:
   - متغیر ها : 'part-two-javascript-fundamentals/variables.md'
   - دیتا تایپ‌ها : 'part-two-javascript-fundamentals/data-types.md'
   - تعامل با کاربر: 'part-two-javascript-fundamentals/alert-prompt-confirm.md'
+  - تبدیل تایپ‌ها: 'part-two-javascript-fundamentals/type-conversions.md'

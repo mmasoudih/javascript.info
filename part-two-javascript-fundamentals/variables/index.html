@@ -1,0 +1,935 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>متغیر ها - ترجمه سایت javascript.info</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font-family:"";--md-code-font-family:""}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-header__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ترجمه سایت javascript.info
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              متغیر ها
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="جستجو" placeholder="جستجو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-nav__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ترجمه سایت javascript.info
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        صفحه اصلی
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        مقدمات
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="مقدمات" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          مقدمات
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/0-An_Introduction_to_JavaScript/" class="md-nav__link">
+        مقدمه‌ای بر جاوا اسکریپت
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/1-Manuals_Specifications/" class="md-nav__link">
+        معرفی منابع مفید
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/2-Code_Editors/" class="md-nav__link">
+        ویرایشگر کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/3-Developer_Console/" class="md-nav__link">
+        کنسول مرورگر
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        پایه جاوا اسکریپت
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="پایه جاوا اسکریپت" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          پایه جاوا اسکریپت
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hello_world/" class="md-nav__link">
+        سلام دنیا!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure/" class="md-nav__link">
+        ساختار کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_strict/" class="md-nav__link">
+        حالت سخت‌ گیرانه
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          متغیر ها
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        متغیر ها
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    متغیر چیه؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#var-let" class="md-nav__link">
+    استفاده از var به جای let
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    یه مثال توی زندگی واقعی
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functional" class="md-nav__link">
+    زبان‌های رویه‌ای(Functional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    نام‌گذاری متغیر
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    نام های رزرو شده
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-strict" class="md-nav__link">
+    مقدار دهی بدون «use strict»
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ثابت ها
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    ثابت‌های با حروف بزرگ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    مزایای استفاده از ثابت‌ها :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    چه زمانی باید از حروف بزرگ و چه زمانی باید از حروف معمولی برای نام‌گذاری ثابت استفاده کنیم؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    نام های مناسب انتخاب کنین
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    ایجاد یا استفاده مجدد ؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    خلاصه
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-types/" class="md-nav__link">
+        دیتا تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alert-prompt-confirm/" class="md-nav__link">
+        تعامل با کاربر
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type-conversions/" class="md-nav__link">
+        تبدیل تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    متغیر چیه؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#var-let" class="md-nav__link">
+    استفاده از var به جای let
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    یه مثال توی زندگی واقعی
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functional" class="md-nav__link">
+    زبان‌های رویه‌ای(Functional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    نام‌گذاری متغیر
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    نام های رزرو شده
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-strict" class="md-nav__link">
+    مقدار دهی بدون «use strict»
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ثابت ها
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    ثابت‌های با حروف بزرگ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    مزایای استفاده از ثابت‌ها :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    چه زمانی باید از حروف بزرگ و چه زمانی باید از حروف معمولی برای نام‌گذاری ثابت استفاده کنیم؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    نام های مناسب انتخاب کنین
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    ایجاد یا استفاده مجدد ؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    خلاصه
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">متغیر ها</h1>
+<p>بیشتر اوقات توی یک برنامه جاوا اسکریپتی با اطلاعات سر و کار داریم مثلا :‌</p>
+<ul>
+<li>فروشگاه آنلاین: اطلاعاتی مثل کالاهای فروخته شده و سبد خرید داره</li>
+<li>برنامه چت آنلاین: اطلاعاتی مثل لیست کاربران، پیام ها و خیلی چیزای دیگه داره </li>
+</ul>
+<p>متغیر های برای نگهداری اطلاعات استفاده میشن </p>
+<h3 id="_2">متغیر چیه؟</h3>
+<p>متغیر یه حافظه نام گذاری شده هست که برای نگهداری اطلاعات میتونیم ازش استفاده کنیم   </p>
+<p>برای ساختن یک متغیر توی جاوا اسکریپت از کلمه let استفاده کنین</p>
+<p>دستور زیر یه متغیر رو با نام message تعریف میکنه :</p>
+<pre><code>let message;
+</code></pre>
+<p>حالا ما میتونیم یه سری اطلاعات رو با عملگر <code>=</code> بریزیم توش </p>
+<pre><code>let message; 
+
+message = 'Hello'; // یه رشته رو نگهداری میکنه
+</code></pre>
+<p>حالا این متغیر تو حافظه ذخیره شده میتونیم با استفاده از نامش بهش دسترسی داشته باشیم:</p>
+<pre><code>let message;
+message = 'Hello!';
+
+alert(message); // محتوای متغیر رو نشون میده
+</code></pre>
+<p>میتونیم خلاصه تر هم بنویسیم یعنی مراحل تعریف کردن و مقداردهی رو توی یک خط انجام بدیم : </p>
+<pre><code> let message = 'Hello!'; // تعریف کردن متغیر و مقدار دادن 
+
+alert(message); // Hello!
+</code></pre>
+<p>همچنین میتونیم چند تا متغیر رو توی یک خط تعریف کنیم :</p>
+<pre><code>let user = 'John', age = 25, message = 'Hello';
+</code></pre>
+<p>اینجوری کوتاه تر به نظر میرسه، ولی توصیه نمیشه اینجوری استفاده کنین و خوانایی کد رو پایین میاره بهتره که هر متغیر رو توی یک خط تعریف کنین </p>
+<p>چند خطی نوشتن طولانی تره اما خوندنش راحت تره: </p>
+<pre><code>
+let user = 'John';
+let age = 25;
+let message = 'Hello';
+</code></pre>
+<p>بعضیا چند تا متغیر رو اینجوری چند خطی تعریف میکنن: </p>
+<pre><code>let user = 'John',
+  age = 25,
+  message = 'Hello';
+</code></pre>
+<p>یا ویرگول رو اولش میذارن :‌</p>
+<pre><code>let user = 'John'
+  , age = 25
+  , message = 'Hello';
+</code></pre>
+<p>از نظر فنی همه اینا یه کار انجام میدن و انتخاب این که از کدوم مدلش استفاده کنین سلیقه‌ای هست و شخصیه </p>
+<h3 id="var-let">استفاده از var به جای let</h3>
+<p>توی اسکریپت های قدیمی شاید کلمه var رو به جای let دیده باشین : </p>
+<pre><code>var message = 'Hello';
+</code></pre>
+<p>کلمه var تقریبا مثل let هست و متغیر تعریف میکنه اما یکم فرق میکنه و روش قدیمی هست </p>
+<p>تفاوت های ریزی بین let و var هست اما هنوز برای ما مهم نیست توی فصل «var قدیمی» به طور مفصل توضیح میدیمش</p>
+<h3 id="_3">یه مثال توی زندگی واقعی</h3>
+<p>برای درک بهتر متغیر‌ها یه جعبه رو تصور کنین که برای نگهداری اطلاعات هست و یه نام منحصر به‌ فرد داره که روی جعبه نوشته شده </p>
+<p>برای نمونه، متغیر message رو میتونین یه برچسب در نظر بگیرین که روی جعبه زده شده و مقدار داخلش هم hello هست :</p>
+<p>میتونیم هر داده دیگه‌ای داخل این جعبه قرار بدیم </p>
+<p>همچنین میتونیم هر چند بار که خواستیم تغییرش بدیم :</p>
+<pre><code>
+let message;
+
+message = 'Hello!';
+
+message = 'World!'; // مقدار متغیر اینجا تغییر کرد 
+
+alert(message);
+</code></pre>
+<p>وقتی که مقدار متغیر عوض میشه اطلاعات قبلیش پاک میشه : </p>
+<p>همچنین میتونیم دو تا متغیر تعریف کنیم و اطلاعات رو از یکی به دیگری کپی کنیم </p>
+<pre><code> let hello = 'Hello world!';
+
+let message;
+
+// copy 'Hello world' from hello into message
+message = hello;
+
+// حالا دو تا متغیر اطلاعات یکسانی دارن
+alert(hello); // Hello world!
+alert(message); // Hello world!
+</code></pre>
+<p>دوبار تعریف کردن باعث ایجاد خطا میشه </p>
+<p>یه متغیر فقط یه بار باید تعریف بشه </p>
+<p>تعریف دوباره متغیری که قبلا تعریف شده خطا میده: </p>
+<pre><code>let message = &quot;This&quot;;
+
+// تکرار let باعث خطا میشه
+let message = &quot;That&quot;; // اینجا ارور میده که از قبل تعریف شده 
+</code></pre>
+<p>پس باید متغیر رو یه بار تعریف کنیم و برای اشاره کردن بهش از let استفاده نکنیم </p>
+<h3 id="functional">زبان‌های رویه‌ای(Functional)</h3>
+<p>جالبه بدونین زبان‌های functional مثل Scala یا Erlang تغییر مقدار متغیر رو ممنوع کردن</p>
+<p>توی این نوع زبان‌ها وقتی مقداری رو توی جعبه قرار می‌دیم تا ابد اونجا می‌مونه و اگه بخوایم مقدار دیگه‌ای رو ذخیره کنیم، ما رو مجبور می‌کنن تا جعبه‌‌ی جدید بسازیم</p>
+<p>اگرچه توی نگاه اول این زبان‌ها عجیب به نظر میان، ولی کاملا توانایی توسعه‌ (توی پروژه‌های) جدی رو دارن مهم‌تر از اون توی زمینه‌هایی مثل محاسبات موازی (Parallel Computation) این محدودیت‌ها تبدیل به مزیت میشن مطالعه‌ی این زبان‌ها (حتی اگه به این زودی قصد استفاده از اونا را ندارین) برای وسیع شدن دیدتون، توصیه می‌شه</p>
+<h3 id="_4">نام‌گذاری متغیر</h3>
+<p>دو تا محدودیت برای نام‌گذاری متغیرها توی جاوا اسکریپت وجود داره: </p>
+<ul>
+<li>نام حتما باید حروف، اعداد، یا نماد های $ و _ باشه</li>
+<li>اولین کاراکتر نباید با عدد شروع بشه</li>
+</ul>
+<p>یه مثال از نام‌گذاری درست : </p>
+<pre><code>let userName;
+let test123;
+</code></pre>
+<p>وقتی که یک نام چند کلمه داره، عموما از روش camelCase استفاده میکنیم به این صورت که کلمات یکی بعد از دیگری پشت هم نوشته میشن و حرف اول هر کلمه کاراکتر بزرگ هست : <code>myVeryLongName</code> .</p>
+<p>همینطور از <code>'$'</code> و <code>'_'</code> هم میشه استفاده کرد. معنی خاصی ندارن و مثل حروف قابل استفاده هستن</p>
+<p>این نام‌ها معتبر هستند :</p>
+<pre><code>let $ = 1; //تعریف یک متغیر با  : &quot;$&quot;
+let _ = 2; // تعریف یک متغیر با : &quot;_&quot;
+
+alert($ + _); // 3
+</code></pre>
+<p>مثالی از نام‌گذاری غلط: </p>
+<pre><code>let 1a; // نمیتونه با عدد شروع بشه 
+
+let my-name; // علامت منفی (خط تیره) نباید استفاده بشه 
+</code></pre>
+<p>حروف کوچیک و بزرگ فرق میکنه </p>
+<p>متغیر <code>apple</code> و <code>AppLE</code> دو تا متغیر جداگانه هستن و یکی نیستن </p>
+<p>حروف غیر انگلیسی هم مجازه ولی توصیه نمیشه </p>
+<pre><code>let имя = '...';
+let 我 = '...';
+</code></pre>
+<p>از نظر فنی اینا درست کار می‌کنن ولی بر اساس یک رسم بین‌المللی برای نام متغیرها از زبان انگلیسی استفاده می‌شه حتی اگه اسکریپت کوچیکی می‌نویسیم، ممکنه تا مدت طولانی‌ای مورد استفاده و توسعه قرار بگیره و افرادی از بقیه کشورها ممکنه نیاز باشه روزی اون اسکریپت رو بخونن</p>
+<h3 id="_5">نام های رزرو شده</h3>
+<p>تعدادی نام رزرو شده وجود داره که نمیشه از اونا برای نام متغیرها استفاده کرد برای این که اونا توسط خودِ زبان جاوا اسکریپت استفاده شدن</p>
+<p>مثلا <code>let</code>، <code>class</code>، <code>return</code> و <code>function</code> رزرو شده هستن</p>
+<p>این کد خطای دستوری میده: </p>
+<pre><code>let let = 5; // نمیشه نام یه متغیر رو let گذاشت
+let return = 5; // همچنین نمیشه نامش رو return گذاشت
+</code></pre>
+<h3 id="use-strict">مقدار دهی بدون «use strict»</h3>
+<p>قبلا این امکان وجود داشت تا متغیری رو بدون استفاده از let و صرفا با مقدار دهی تعریف کرد درصورتیکه از use strict استفاده نکنیم، این امکان همچنان وجود داره</p>
+<pre><code>// توی این مثال از use strict استفاده نشده
+
+num = 5; // متغیر num اگه وجود نداشته باشه ایجاد میشه
+
+alert(num); // 5
+</code></pre>
+<p>این روش مناسب نیست و در صورت وجود use strict با خطا مواجه خواهد شد:</p>
+<pre><code>&quot;use strict&quot;;
+
+
+num = 5; // ارور :‌ متغیر num تعریف نشده!
+</code></pre>
+<h3 id="_6">ثابت ها</h3>
+<p>برای تعریف کردن یک ثابت (متغیر هایی که مقدارشون غیر قابل تغییره) از کلمه const به جای let استفاده کنین: </p>
+<pre><code>const myBirthday = '18.04.1982';
+</code></pre>
+<p>متغیر هایی که با کلمه const تعریف میشن رو ثابت میگیم بهشون ثابت‌ها دوباره قابل مقدار دهی نیستن و اگه سعی کنیم اونا رو تغییر بدیم به خطا میخوریم: </p>
+<pre><code>const myBirthday = '18.04.1982';
+
+myBirthday = '01.01.2001'; // ارور میده چون نمیشه مقدار ثابت رو تغییر داد
+</code></pre>
+<p>وقتی یه برنامه نویس مطمئنه که متغیر هیچ‌وقت عوض نمیشه میتونه اونو به عنوان ثابت تعریف کنه</p>
+<h3 id="_7">ثابت‌های با حروف بزرگ</h3>
+<p>به صورت یک عُرفِ همه‌گیر، از ثابت‌های با حروف بزرگ به عنوان نام مستعار برای مقادیری که به خاطر سپردن اونا دشواره، استفاده می‌شه. این دسته از ثابت‌ها اصطلاحا prior to execution (پیش از اجرای برنامه) مقدارشون قطعیه</p>
+<p>توی ثابت‌ها از <code>حروف بزرگ</code> و <code>_</code> استفاده می‌شه :</p>
+<pre><code>const COLOR_RED = &quot;#F00&quot;;
+const COLOR_GREEN = &quot;#0F0&quot;;
+const COLOR_BLUE = &quot;#00F&quot;;
+const COLOR_ORANGE = &quot;#FF7F00&quot;;
+// ... ما نیاز داریم یه رنگ انتخاب کنیم 
+let color = COLOR_ORANGE;
+alert(color); // #FF7F00
+</code></pre>
+<h3 id="_8">مزایای استفاده از ثابت‌ها :</h3>
+<ul>
+<li>به خاطر سپردن COLOR_ORANGE خیلی راحت‌تر از #FF7F00 هست </li>
+<li>غلط نوشتن #FF7F00 از COLOR_ORANGE خیلی آسون‌تره</li>
+<li>موقعی خوندن کدها، COLOR_ORANGE با معنی تر از FF7F00# هست </li>
+</ul>
+<h3 id="_9">چه زمانی باید از حروف بزرگ و چه زمانی باید از حروف معمولی برای نام‌گذاری ثابت استفاده کنیم؟</h3>
+<p>ثابت بودن یک متغیر صرفا به این معنیه که مقدار اون تغییر نخواهد کرد. یک دسته از ثابت‌ها قبل از اجرای برنامه مقدارشون قطعی خواهد بود و دسته دیگه در حین اجرای (Run Time) برنامه مقدارشون مشخص می‌شه (و دیگه مقدارشون تغییر نمی‌کنه)</p>
+<p>برای نمونه :‌</p>
+<pre><code>const pageLoadTime = /* زمانی که طول کشیده تا صفحه وب بارگذاری بشه*/;
+</code></pre>
+<p>مقدار ثابت <code>pageLoadTime</code> قبل از اجرای برنامه مشخص نبوده و به همین دلیل به صورت عادی نوشته شده اما هنوز یک ثابته چون که بعد از مقداردهی تغییر نمیکنه</p>
+<p>ثابت‌های با حروف بزرگ زمانی که اصطلاحا مقداری به صورت "hard code" شده داریم، استفاده می‌شه (مثل کد رنگ قرمز)</p>
+<h3 id="_10">نام های مناسب انتخاب کنین</h3>
+<p>لطفا نام متغیرهای خودتونو با حساسیت انتخاب کنین و برای اینکار خوب فکر کنین</p>
+<p>انتخاب نام برای متغیرها یکی از کارهای مهم و پیچیده توی برنامه‌نویسیه یک نگاه سریع به نام متغیرها میتونه تفاوت یک برنامه‌نویس تازه‌کار و با تجربه را نشان بده</p>
+<p>توی پروژه‌های واقعی، بجای از صفر نوشتن برنامه‌ها، بیشتر زمان صرف اصلاح و توسعه کدهای موجود می‌شه. وقتی بعد از مدتی به کدهای قبلی بر‌میگردیم، بدست آوردن اطلاعات از کد‌هایی که نام‌گذاری‌های خوبی دارن خیلی راحت‌تره (منظور متغیرهاییه که نام‌های خوبی دارن</p>
+<p>لطفا قبل از انتخاب نام برای یک متغیر خوب بهش فکر کنین نتیجه‌اش رو حتما میبینین</p>
+<p>یه سری قوانین که اگه رعایت کنین خوبه :</p>
+<ul>
+<li>
+<p>از نام‌هایی که برای انسان قابل فهم است استفاده کنید مانند <code>userName</code> یا<code>shoppingCart</code></p>
+</li>
+<li>
+<p>از نام‌های مخفف یا کوتاه استفاده نکنین مثل <code>a</code>، <code>b</code>، <code>c</code>، مگه اینکه بدونین چیکار دارین میکنین</p>
+</li>
+<li>
+<p>نام‌های کاملا واضح و مختصر انتخاب کنین نمونه‌هایی از نام‌های بد data و value هستن این نام‌ها هیچ‌چیزی رو توضیح نمی‌دن. استفاده از این مدل نام‌ها فقط زمانی قابل قبوله که محتوای کدی که می‌نویسین استثنا مشخص کنه که data یا value به چه چیزی اشاره می‌کنه</p>
+</li>
+<li>
+<p>با ذهن خود و تیم کاریتان توافق نظر داشته باشین اگر به مخاطبان وب‌سایت‌تون user میگین، متغیرهای مرتبط رو به جای <code>currentVisitor</code> یا <code>newManInTown</code> باید <code>currentUser</code> یا <code>newUser</code> نام‌گذاری کنین</p>
+</li>
+</ul>
+<h3 id="_11">ایجاد یا استفاده مجدد ؟</h3>
+<p>به عنوان آخرین نکته بعضی از برنامه‌نویسای تنبل بجای تعریف متغیرهای جدید، از متغیرهای موجود دوباره استفاده می‌کنن</p>
+<p>در نتیجه متغیرهای اونا مثل جعبه‌‌ایه که افراد متفاوت چیزهای مختلفی توش ریختن و نام روی برچسب اونا رو تغییر ندادن</p>
+<p>این دسته از برنامه‌نویسان در تعریف متغیر مقداری صرفه‌جویی میکنن، ولی مدت زمان زیادی از زمان رفع خطاها رو افزایش میدن</p>
+<p>بهینه‌سازی‌هایی که توی مرورگرهای امروزی و همینطور کم‌حجم‌کننده‌های جاوا اسکریپت صورت می‌گیره، در بوجود نیامدن مشکلات عملکردی (Performance) برنامه‌های ما کمک می‌کنن حتی استفاده از متغیرهای مختلف برای مقادیر مختلف به موتور جاوا اسکریپت کمک می‌کنه تا کد شما رو بهینه کنه</p>
+<h3 id="_12">خلاصه</h3>
+<ul>
+<li>متغیرها رو برای نگهداری اطلاعات میتونیم با کلمه های var , let و یا const تعریف کنیم </li>
+<li>کلمه let روش مدرن تعریف کردن متغیره </li>
+<li>کلمه var یه روش قدیمی هست برای تعریف متغیر در حالت معمولی ازش استفاده‌ای نمیکنیم اما تفاوت هاش با let رو توی قسمت «var قدیمی» توضیح میدیم</li>
+<li>کلمه const مثل let هست اما مقدارش نمیتونه تغییر کنه </li>
+<li>متغیرها باید جوری نام‌گذاری بشن تا راحت متوجه بشیم داخلشون چیه</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../use_strict/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                قبلی
+              </span>
+              حالت سخت‌ گیرانه
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../data-types/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                بعدی
+              </span>
+              دیتا تایپ‌ها
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "search.config.lang": "en", "search.config.pipeline": " ", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u062c\u0633\u062a\u062c\u0648", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>

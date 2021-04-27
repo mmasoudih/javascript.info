@@ -1,0 +1,763 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>مقدمه‌ای بر جاوا اسکریپت - ترجمه سایت javascript.info</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font-family:"";--md-code-font-family:""}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-header__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ترجمه سایت javascript.info
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              مقدمه‌ای بر جاوا اسکریپت
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="جستجو" placeholder="جستجو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-nav__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ترجمه سایت javascript.info
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        صفحه اصلی
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        مقدمات
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="مقدمات" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          مقدمات
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          مقدمه‌ای بر جاوا اسکریپت
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        مقدمه‌ای بر جاوا اسکریپت
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    جاوا اسکریپت چیه؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    خب این موتور هایی که راجع بهشون صحبت کردیم چطوری کار میکنن؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    جاوا اسکریپت توی مروگر چه کارایی میتونه انجام بده؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    جاوا اسکریپت توی مروگر چه کارایی نمی‌تونه انجام بده؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    چی جاوا اسکریپت رو منحصر به فرد می‌کنه؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    زبان هایی که روی جاوا اسکریپت هستن
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    خلاصه
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-Manuals_Specifications/" class="md-nav__link">
+        معرفی منابع مفید
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-Code_Editors/" class="md-nav__link">
+        ویرایشگر کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-Developer_Console/" class="md-nav__link">
+        کنسول مرورگر
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        پایه جاوا اسکریپت
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="پایه جاوا اسکریپت" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          پایه جاوا اسکریپت
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/hello_world/" class="md-nav__link">
+        سلام دنیا!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/structure/" class="md-nav__link">
+        ساختار کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/use_strict/" class="md-nav__link">
+        حالت سخت‌ گیرانه
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/variables/" class="md-nav__link">
+        متغیر ها
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/data-types/" class="md-nav__link">
+        دیتا تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/alert-prompt-confirm/" class="md-nav__link">
+        تعامل با کاربر
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/type-conversions/" class="md-nav__link">
+        تبدیل تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    جاوا اسکریپت چیه؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    خب این موتور هایی که راجع بهشون صحبت کردیم چطوری کار میکنن؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    جاوا اسکریپت توی مروگر چه کارایی میتونه انجام بده؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    جاوا اسکریپت توی مروگر چه کارایی نمی‌تونه انجام بده؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    چی جاوا اسکریپت رو منحصر به فرد می‌کنه؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    زبان هایی که روی جاوا اسکریپت هستن
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    خلاصه
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">مقدمه‌ای بر جاوا اسکریپت</h1>
+<p>خب بیاین ببینیم جاوا اسکریپت چه چیزای خفنی برامون داره، چه کارایی میتونیم باهاش انجام بدیم و چه تکنولوژی هایی ازش استفاده میکنن.</p>
+<h3 id="_2">جاوا اسکریپت چیه؟</h3>
+<p>جاوا اسکریپت اول برای «زنده کردن صفحات وب» ساخته شد</p>
+<p>برنامه هایی که با این زبان نوشته میشن اسمشون اسکریپت (script) هست، میشه اونا رو توی HTML یک صفحه وب نوشت و موقعی که صفحه بارگذاری میشه به صورت خودکار اجرا بشن</p>
+<p>اسکریپت ها به صورت متن ساده نوشتن میشن و مراحل پیچیده‌ای برای اجرا شدن لازم نیست انجام بشه (میشه با یک ویرایشگر متن به راحتی اسکریپت نوشت)</p>
+<p>پس بذارین یه نکته‌ای همینجا بهتون بگم جاوااسکریپت(JavaScript) با یه زبان دیگه‌ای که اسمش جاوا(Java) هست خییییلی فرق میکنه</p>
+<blockquote>
+<p>چرا بهش میگیم جاوا اسکریپت؟ زمانی که جاوا اسکریپت ساخته شد، اوایل اسمش LiveScript بود. اما اون زمان جاوا خیلی محبوب بود پس تصمیم گرفتن که از جایگاه جاوا استفاده کنن و اسمش رو گذاشتن "برادر کوچکتر جاوا" تا از محبوبیت جاوا استفاده کنه. اما بیشتر که تکامل پیدا کرد جاوا اسکریپت به یه زبان کاملا مستقل تبدیل شد با ویژگی های خاص خودش به نام ECMAScript</p>
+</blockquote>
+<p>جاوا اسکریپت نه تنها توی مرورگر بلکه توی سرور یا هر جایی که موتور جاوا اسکریپت وجود داشته باشه میتونه اجرا بشه</p>
+<p>مرورگر توی خودش یه موتور جاوا اسکریپت داره که با استفاده از اون میتونه اسکریپت‌ها رو اجرا کنه که بعضیا بهش «ماشین مجازی جاوا اسکریپت هم میگن»</p>
+<p>موتور های مختلف، اسمای مخفف متفاوتی دارن که چند تاشون رو براتون میگم و جلوش هم مرورگر هایی که از این موتور ها استفاده میکنن مینویسم براتون :‌</p>
+<ul>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/V8_(JavaScript_engine)">V8</a> - Chrome &amp; Opera</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/SpiderMonkey">SpiderMonkey</a> - Firefox</p>
+</li>
+<li>
+<p>یه سری دیگه از موتور ها هستن مثل "Chakra" که برای مرورگر Internet Explorer خدابیامرزه</p>
+</li>
+<li>
+<p>موتور "ChakraCore" برای مرورگر Microsoft Edge</p>
+</li>
+<li>
+<p>موتور "Nitro" و "SquirrelFish" برای مرورگر Safari</p>
+</li>
+<li>
+<p>و ...</p>
+</li>
+</ul>
+<p>این اصطلاحات بالا رو سعی کنین که یادتون بمونه، چون توی مقاله هایی که توسعه دهنده‌ها مینویسن از این چیزا زیاد استفاده میکنن مثلا اگه جایی خوندین که فلان ویژگی توی V8 فقط پشتیبانی میشه احتمالا توی مرورگر های Chrome و Opera کار میکنه</p>
+<h3 id="_3">خب این موتور هایی که راجع بهشون صحبت کردیم چطوری کار میکنن؟</h3>
+<p>موتور‌ها خیلی پیچیده هستن ولی اصول اولیه‌ خیلی راحته</p>
+<p>۱− موتوری که توی مرورگر هست میاد و اسکریپت رو میخونه یا parse‌اش میکنه</p>
+<p>۲− بعد میاد اسکریپت رو تبدیلش میکنه به زبان ماشین (منظورم همون compile کردنه)</p>
+<p>۳− و بعد از کامپایل خیلی سریع اجراش میکنه</p>
+<p>موتورها توی هر کدوم از مراحل بهینه سازی هم انجام میدن، حتی اسکریپتی که کامپایل شده رو موقع اجرا بررسی میکنه و اطلاعاتی که از اول تا اخر برنامه رد و بدل میکنه رو تجزیه و تحلیل میکنه فرایند بهینه سازیش اینجوریه</p>
+<h3 id="_4">جاوا اسکریپت توی مروگر چه کارایی میتونه انجام بده؟</h3>
+<p>جاوا اسکریپت کنونی یه زبان برنامه نویسی «امن» هست، دسترسی سطح پایین یعنی کار با مموری یا CPU رو نمیده بهمون برای این که اوایل جاوا اسکریپت برای مرورگر ها ساخته شد و نیازی به این چیزا نداشت</p>
+<p>قابلیت های جاوا اسکریپت بستگی داره به این که کجا اجرا بشه به عنون مثال Node.js از توابعی پشتیبانی می کنه که به جاوا اسکریپت امکان خوندن و نوشتن فایل ها ، انجام درخواست های شبکه و ... رو میده</p>
+<p>جاوا اسکریپت توی مرورگر می‌تونه همه کارهایی که مربوطه به دستکاری صفحه وب، تعامل با کاربر و سرور رو انجام بده.</p>
+<p>خب بذارین چند تا مثال براتون بزنم تا بهتر متوجه بشین:</p>
+<ul>
+<li>
+<p>اضافه کردن تگ HTML جدید به صفحه، ویرایش کردن محتوای توی صفحه، یا تغییر دادن استایل‌ها</p>
+</li>
+<li>
+<p>به کارایی که کاربر توی صفحه انجام مثل کلیک‌کردن، تکون دادن ماوس یا فشار دادن کلیدها</p>
+</li>
+<li>
+<p>درخواست ها رو از طریق شبکه به سرور میفرسته برای دانلود و اپلود (اصطلاحا تکنولوژی های AJAX و COMET)</p>
+</li>
+<li>
+<p>گرفتن و تنظیم کردن کوکی‌ها، پرسیدن سوال از کاربر و نشون دادن پیغام</p>
+</li>
+<li>
+<p>نگهداری اطلاعات روی مرورگر کاربر (با استفاده از local storage)</p>
+</li>
+</ul>
+<h3 id="_5">جاوا اسکریپت توی مروگر چه کارایی نمی‌تونه انجام بده؟</h3>
+<p>دست و پای جاوا اسکریپت توی مرورگر بسته هست اونم به خاطر اینه که اطلاعات کاربر توسط سایت های مخرب لو نره و به خطر نیوفته</p>
+<p>چند تا از این محدودیت ها رو براتون میگم :</p>
+<ul>
+<li>
+<p>جاوااسکریپت توی مرورگر نمیتونه به فایل های روی هاردتون دسترسی داشته باشه و اونا رو بخونه یا یه چیزی بنویسه یا کپیشون کنه و دسترسی مستقیمی به توابع سیستم عامل نداره</p>
+</li>
+<li>
+<p>مرورگر های به‌روز اجازه کار با فایل‌ها رو بهش میدن اما با اجازه کاربر و با دسترسی محدود شده و کاربر میتونه فایلش رو انتخاب کنه یا این که بِکشه بیاره بندازه توی پنجره مرورگر</p>
+</li>
+<li>
+<p>روش هایی برای کار کردن با دوربین و میکروفن هست که نیاز به اجازه کاربر داره پس جاوا اسکریپت نمیتونه خودش بیاد دوربین و باز کنه و ببینه چیکار میکنین و بعدش فیلمتون رو بفرسته برای آژانس امنیت ملی (NSA)</p>
+</li>
+<li>
+<p>تب ها یا پنجره های مختلف مرورگر با هم دیگه ارتباطی ندارن برای مثال بعضی وقتا یک پنجره از جاوا اسکریپت استفاده میکنه تا یک پنجره دیگه رو باز کنه اما توی این حالت هم اگر ادرس های سایتها فرق کنن ممکنه که نتونه دسترسی داشته باشه (از یه دامنه، پورت، یا پروتکل دیگه) اصطلاحا این ویژگی رو میگن "Same Origin Policy" برای حل این مسئله ، هر دو صفحه باید برای تبادل داده توافق کنن و یک کد جاوا اسکریپت خاص هست که اینو مدیریت می کنه. توی آموزش های بعدی میگم چی هست. این محدودیت، برای ایمنی کاربره مثلا یه صفحه از سایت http://anysite.com که یک کاربر باز کرده نباید بتونه به یک تب مرورگر دیگه به ادرس http://gmail.com دسترسی پیدا کنه و اطلاعات رو از اونجا بدزده</p>
+</li>
+<li>
+<p>جاوا اسکریپت می تونه به راحتی از طریق شبکه با سروری که صفحه فعلی از اونجا اومده ارتباط برقرار کنه اما نمیتونه از یه دامنه یا سایت دیگه اطلاعات رو دریافت کنه، ولی این کار ممکنه و لازمه که سرور داخل HTTP header ها اون رو قبول کنه، این محدودیت ها برای امنیت هستش</p>
+</li>
+</ul>
+<p><img alt="" src="https://files.virgool.io/upload/users/217114/posts/ubjrf30ckg0f/xjgfscneyy70.png" /></p>
+<p>بعضی از این محدودیت بستگی به این داره که جاوا اسکریپت کجا اجرا بشه مثلا اگه روی سرور اجرا بشه این محدودیت ها وجود نداره، مرورگرهای جدید هم اجازه میدن به افزونه هایی که ممکنه مجور های زیادی بخوان</p>
+<h3 id="_6">چی جاوا اسکریپت رو منحصر به فرد می‌کنه؟</h3>
+<p>حداقل سه نکته جالب در مورد جاوا اسکریپت وجود داره:</p>
+<ul>
+<li>
+<p>یکپارچگی کامل با HTML / CSS</p>
+</li>
+<li>
+<p>کار های ساده به راحتی انجام میشن</p>
+</li>
+<li>
+<p>توسط مرورگر های اصلی پشتیبانی میشه و به صورت پیش‌فرض هم فعاله</p>
+</li>
+</ul>
+<p>جاوا اسکریپت تنها فناوری هستش که این سه تا رو با هم دیگه ترکیب می‌کنه</p>
+<p>این چیزیه که جاوا اسکریپت رو منحصر به فرد می‌کنه به همین دلیل گسترده ترین ابزار برای ایجاد رابط های مرورگره</p>
+<p>جاوا اسکریپت همچنین امکان ایجاد سرور و برنامه برای موبایل و ... هم بهمون میده</p>
+<h3 id="_7">زبان هایی که روی جاوا اسکریپت هستن</h3>
+<p>سینتکس(نحوه نوشتن کد) جاوا اسکریپت مناسب نیاز همه نیست، افراد مختلف ویژگی های مختلفی میخوان برای پروژه‌هاشون</p>
+<p>این اواخر زبان های زیادی به وجود اومدن که قبل از اجرا شدن توی مرورگر تبدیل میشن به جاوا اسکریپت، ابزار های جدید این عمل تبدیل کردن رو خیلی سریع انجام میدن و به توسعه دهنده‌ها این اجازه رو میدن که توی یه زبان دیگه کد بزنن و در نهایت به صورت خودکار اون رو به جاوا اسکرپت تبدیل کنن</p>
+<p>چند تا از این زبان رو براتون مینویسم :</p>
+<ul>
+<li>
+<p>CoffeeScript : یه ترکیب شیرینه برای جاوا اسکریپت نحوه نوشتن کدها رو کوتاه تر کرده ، و به ما اجازه میده که کد های تمیز تر و بهتری بنویسیم معمولا توسعه دهنده های روبی دوسش دارن</p>
+</li>
+<li>
+<p>TypeScript : تمرکز تایپ‌اسکریپت اضافه کردن نوع داده های مختلفه به صورت سخت گیرانه تا فرایند توسعه و پشتیبانی سیستم های پیچیده رو راحت تر کنه و مایکروسافت هم توسعه‌اش داده</p>
+</li>
+<li>
+<p>Flow: هم کارش مثل تایپ‌اسکریپته اما یه جور دیگه این کار رو انجام میده و فیسبوک توسعه دهنده‌اش هست</p>
+</li>
+<li>
+<p>Dart: یه زبان مستقله که موتور خاص خودش رو داره که توی محیط های غیر از مرورگر اجرا میشه مثل اپلیکیشن های موبایل اما همچنان میتونه به جاوا اسکریپت تبدیل بشه، توسعه دهنده‌اش هم گوگل هست</p>
+</li>
+<li>
+<p>Brython: یه تبدیل کننده کد به جاوا اسکریپت هست که با پایتون کار میکنه و این اجازه رو میده که با پایتون خالص بدون استفاده از جاوا اسکریپت برنامه بنویسین</p>
+</li>
+<li>
+<p>Kotlin: یک زبان برنامه نویسی جدیده که مختصره و امن که میتونه مرورگر یا Node رو هدف قرار بده</p>
+</li>
+</ul>
+<p>البته خیلی بیشتر از این ها هستن ولی اگه بخوایم از هر کدوم از این زبان های تبدیل کننده استفاده کنیم باید جاوا اسکریپت رو بلد باشیم تا واقعا بفهمیم داریم چیکار میکنیم</p>
+<h3 id="_8">خلاصه</h3>
+<ul>
+<li>
+<p>جاوا اسکریپت اون اوایل به عنوان یه زبان برای مرورگر ایجاد شد ، اما الان توی خیلی از محیط های دیگه هم ازش استفاده می‌شه.</p>
+</li>
+<li>
+<p>امروزه جاوا اسکریپت جایگاه منحصر به فردی به عنوان گسترده ترین زبان مرورگر با یکپارچگی کامل با HTML / CSS داره</p>
+</li>
+<li>
+<p>زبانهای زیادی وجود دارن که به جاوا اسکریپت "منتقل میشن" و ویژگیهای خاصی را ارائه می‌دن. توصیه می‌شه بعد از تسلط به جاوا اسکریپت، حداقل به طور خلاصه یه نگاهی بهشون بندازین.</p>
+</li>
+</ul>
+<p>اگر توی این مقاله مشکلی بود یا خواستین توی این پروژه مشارکت کنین این لینک گیت‌هابش هست.</p>
+<p><a href="https://javascript.info/intro">منبع</a></p>
+<p><a href="https://github.com/mmasoudih/javascript.info">گیت‌هاب</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../.." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                قبلی
+              </span>
+              صفحه اصلی
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../1-Manuals_Specifications/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                بعدی
+              </span>
+              معرفی منابع مفید
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "search.config.lang": "en", "search.config.pipeline": " ", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u062c\u0633\u062a\u062c\u0648", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>

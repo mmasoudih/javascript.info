@@ -1,0 +1,659 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>ساختار کد - ترجمه سایت javascript.info</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font-family:"";--md-code-font-family:""}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-header__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ترجمه سایت javascript.info
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ساختار کد
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="جستجو" placeholder="جستجو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-nav__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ترجمه سایت javascript.info
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        صفحه اصلی
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        مقدمات
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="مقدمات" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          مقدمات
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/0-An_Introduction_to_JavaScript/" class="md-nav__link">
+        مقدمه‌ای بر جاوا اسکریپت
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/1-Manuals_Specifications/" class="md-nav__link">
+        معرفی منابع مفید
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/2-Code_Editors/" class="md-nav__link">
+        ویرایشگر کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/3-Developer_Console/" class="md-nav__link">
+        کنسول مرورگر
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        پایه جاوا اسکریپت
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="پایه جاوا اسکریپت" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          پایه جاوا اسکریپت
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hello_world/" class="md-nav__link">
+        سلام دنیا!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ساختار کد
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        ساختار کد
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#statements" class="md-nav__link">
+    دستورات (Statements)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semicolon" class="md-nav__link">
+    نقطه ویرگول (Semicolon)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    توضیحات (Comments)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_strict/" class="md-nav__link">
+        حالت سخت‌ گیرانه
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        متغیر ها
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-types/" class="md-nav__link">
+        دیتا تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alert-prompt-confirm/" class="md-nav__link">
+        تعامل با کاربر
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type-conversions/" class="md-nav__link">
+        تبدیل تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#statements" class="md-nav__link">
+    دستورات (Statements)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semicolon" class="md-nav__link">
+    نقطه ویرگول (Semicolon)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    توضیحات (Comments)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">ساختار کد</h1>
+<p>اولین چیزی که ما باید یاد بگیریم ساختار یک قطعه کد هست </p>
+<h3 id="statements">دستورات (Statements)</h3>
+<p>دستورات و ساختارهایی که یه سری کارای خاصی رو انجام میدن 
+توی آموزش قبلی هم دستوراتی رو دیدیم , ‍‍<code>('سلام دنیا !')alert</code> که یک پیغام «سلام دنیا!» رو نشون میداد</p>
+<p>میتونیم تعداد زیادی دستور داشته باشیم و با استفاده از سمی‌کالن <code>;</code> میتونن از هم دیگه جدا بشن </p>
+<p>بذارین یک مثال بزنم تا بهتر متوجه بشین، اینجا ما "سلام دنیا" توی دو تا دستور alert جدا کردیم </p>
+<pre><code>alert('سلام'); alert('دنیا');
+</code></pre>
+<p>معمولا دستور ها توی خط های جدا نوشته میشن تا خوانایی کد بالا بره : </p>
+<pre><code>alert('سلام');
+alert('دنیا');
+</code></pre>
+<h3 id="semicolon">نقطه ویرگول (Semicolon)</h3>
+<p>اگه خط شکسته بشه میتونیم نقطه ویرگول نذاریم </p>
+<p>این باز هم اجرا میشه: </p>
+<pre><code>alert('سلام')
+alert('دنیا')
+</code></pre>
+<p>توی این مثال بالا مفسر جاوا اسکریپت وقتی به یک خط شکسته شده میرسه اونو یه نقطه ویرگول فرضی در نظر میگیره و خودش اونو قرار میده برامون، این ویژگی اسمش «درج خودکار نقطه ویرگول» هست </p>
+<p>توی بیشتر موارد، یک خط جدید، یک نقطه ویرگول فرضی حساب میشه. اما «بیشتر موارد» به معنی «همیشه» نیست !</p>
+<p>بعضی جاها هست که خط جدید به معنی نقطه ویرگول نیست برای مثال :</p>
+<pre><code>alert(3 +
+1
++ 2);
+</code></pre>
+<p>خروجی کد بالا ۶ هست برای این که جاوا اسکریپت اینجا نقطه ویرگول اضافه نکرده، خیلی واضحه که اگه اخر خط علامت <code>"+"</code> باشه یعنی این عبارت ناقص هست  پس نقطه ویرگول لازم نیست </p>
+<p>اما بعضی جاها هست که جاوا اسکریپت گیج میشه و نمیدونه که باید نقطه ویرگول بذاره بالاخره یا نذاره ! پیدا کردن مشکل توی این موارد خیلی سخته</p>
+<p>مثالی از خطا  </p>
+<p>اگه کنجکاوین که یک مثال از این مدل خطا ها رو ببینین این کد رو بررسی کنین : </p>
+<pre><code>[1, 2].forEach(alert)
+</code></pre>
+<p>فعلا لازم نیست فکر کنین که معنی <code>[]</code> و <code>forEach</code> چیه بعدا یاد میگیرم چی هستن الان فقط یادتون باشه که نتیجه کد بالا چیه اول عدد ۱ رو نشون میده و بعدش عدد ۲ </p>
+<p>خب بریم تا یک <code>alert‍</code> قبل از کد اضافه کنیم و اون رو با نقطه ویرگول تموم نکنیم </p>
+<pre><code>alert(&quot;خطایی اتفاق خواهد افتاد&quot;)
+
+[1, 2].forEach(alert)
+</code></pre>
+<p>حالا اگه ما کد بالا رو اجرا کنیم فقط <code>alert</code> اول اجرا میشه و بعد ما یه خطا داریم !‌
+اما اگه بعد از <code>alert</code> اول یه نقطه ویرگول بذاریم همه چیز درست میشه  </p>
+<pre><code>alert(&quot;یوهو همه چی مرتبه اینجا !&quot;);
+
+[1, 2].forEach(alert)
+</code></pre>
+<p>اگه کد بالا رو اجرا کنین اول "یوهو همه چی مرتبه اینجا !" نشون داده میشه و بعدش به ترتیب عدد های ۱ و ۲ </p>
+<p>این خطا بدون نقطه ویرگول اتفاق میوفته چرا؟! چون که جاوا اسکریپت قبل از علامت کروشه <code>[...]</code> نقطه ویرگول نمیذاره </p>
+<p>پس، چون نقطه ویرگول به صورت خودکار اضافه نشده کد توی مثال قبلی یه عبارت واحد در نظر گرفته میشه و موتور یه همچین چیزی میبینه: </p>
+<pre><code>alert(&quot;There will be an error&quot;)[1, 2].forEach(alert)
+</code></pre>
+<p>اما باید توی دو تا دستور جدا باشه، اینجوری ادغام کردن کردنشون با هم دیگه اشتباهه برای همون خطا میده </p>
+<p>توصیه میکنیم که نقطه ویرگول رو بین دستور های مختلف بذارین حتی اگه با یه خط جدید از هم دیگه جدا شدن، این قانون رو همه به صورت گسترده قبول کردن</p>
+<p>یه بار دیگه توجه کنین، ممکنه خیلی جاها از نقطه ویرگول استفاده نکنین اما استفاده ازش به خصوص اگه تازه‌کار هستین امن تره</p>
+<h3 id="comments">توضیحات (Comments)</h3>
+<p>با گذر زمان برنامه ها پیچیده‌تر و پیچیده‌تر میشن و لازمه که توضیحاتی اضافه کنیم که معلوم باشه فلان خط از کد داره چیکار میکنه و چرا</p>
+<p>توضیحات رو میشه هر جایی از اسکریپت گذاشت اونا روی اجرا شدن کد تاثیر نمیذارن چون موتور اونا رو خیلی ساده نادیده میگیره</p>
+<p>توضیحات یک خطی با دو تا خط مورب یا همون اسلش رو به جلو شروع میشه یعنی اینجوری  <code>//</code> </p>
+<p>اگه اینجوری <code>\\</code> بنویسین درست نیست </p>
+<p>این مدل از توضیحات میتونه در ادامه دستور بیاد یا این که کلا توی یک خط جدا باشه :</p>
+<pre><code> این توضیحات یک خط کامل رو گرفته //
+alert('سلام');
+
+alert('دنیا'); //   این توضیحات در ادامه دستور اومدن
+</code></pre>
+<p>توضیحات چند خطی با یک خط مورب رو به جلو و ستاره شروع میشه و با یک ستاره و خط رو به جلو تموم میشه یعنی اینجوری : </p>
+<pre><code> /* اینجوری شروع میشه 
+و یه سری توضیحات ...
+
+*/ و اینجوری تموم میشه 
+alert('سلام');
+alert('دنیا');
+
+</code></pre>
+<p>هر چی توی توضیحات بنویسیم اجرا نمیشه و نادیده گرفته میشه پس اگه ما کد هم بینش بنیوسیم اجرا نمیشه</p>
+<p>بعضی وقتا لازم میشه تا به صورت موقتی یه تیکه کد رو غیرفعال کنیم اینجوری میتونیم انجامش بدیم :‌</p>
+<pre><code>/*
+alert('سلام');
+*/
+alert('دنیا');
+</code></pre>
+<p>از کلید های میانبر استفاده کنین</p>
+<p>توی بیشتر ویرایشگرا، یه خط از کد رو میتونیم با زدن دکمه های <code>/+Ctrl</code>  تبدیلش کنیم به توضیح یک خطی و برای توضیحات چند خطی (اول اون تیکه‌ای که میخواین رو انتخاب کنین) و بعدش <code>/+Ctrl+Shift</code>  رو بزنین اگه از مک(Mac) استفاده میکنین به جای <code>Ctrl</code>  از <code>Cmd</code> و به جای <code>Shift</code> از <code>Option</code> استفاده کنین</p>
+<p>توضیحات تو در تو پشتیبانی نمیشه!</p>
+<p>اگه به صورت تو در تو بخواین توضیحات بنویسین به خطا بر میخورین</p>
+<p>به مثال زیر توجه کنین : </p>
+<pre><code>/*
+  /* توضیحات تو در تو ?!? */
+*/
+alert( 'دنیا' );
+
+</code></pre>
+<p>لطفا توی کداتون توضیحات بنویسین :) </p>
+<p>با نوشتن توضیحات حجم کداتون زیاد میشه ولی این مشکلی نداره ابزار های زیادی وجود داره که کدتون رو قبل از انتشار روی سرور فشرده میکنه و توضیحات رو هم پاک میکنه، پس توی اسکریپت نهایی هیچ توضیحاتی وجود نداره، توضیحات هیچ تاثیر منفی توی برنامه نداره.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../hello_world/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                قبلی
+              </span>
+              سلام دنیا!
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../use_strict/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                بعدی
+              </span>
+              حالت سخت‌ گیرانه
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "search.config.lang": "en", "search.config.pipeline": " ", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u062c\u0633\u062a\u062c\u0648", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,32 @@
+@font-face {
+	font-family: vazir;
+	src: url("../fonts/Vazir-Light-FD.woff");
+}
+
+
+body {
+    font-family: vazir;
+}
+
+::-webkit-input-placeholder {
+    font-family: vazir;
+}
+::-moz-placeholder {
+    font-family: vazir;
+}
+:-ms-input-placeholder {
+    font-family: vazir;
+}
+::placeholder {
+    font-family: vazir;
+}
+.button {
+    padding: 10px 30px;
+}
+.button-outline {
+    border: 2px solid black;
+    transition: all .3s !important;
+}
+.button-outline:hover {
+    background: black;
+}

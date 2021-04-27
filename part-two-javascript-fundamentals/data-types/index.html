@@ -1,0 +1,858 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>دیتا تایپ‌ها - ترجمه سایت javascript.info</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font-family:"";--md-code-font-family:""}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-header__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ترجمه سایت javascript.info
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              دیتا تایپ‌ها
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="جستجو" placeholder="جستجو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-nav__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ترجمه سایت javascript.info
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        صفحه اصلی
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        مقدمات
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="مقدمات" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          مقدمات
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/0-An_Introduction_to_JavaScript/" class="md-nav__link">
+        مقدمه‌ای بر جاوا اسکریپت
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/1-Manuals_Specifications/" class="md-nav__link">
+        معرفی منابع مفید
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/2-Code_Editors/" class="md-nav__link">
+        ویرایشگر کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-one-introduction/3-Developer_Console/" class="md-nav__link">
+        کنسول مرورگر
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        پایه جاوا اسکریپت
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="پایه جاوا اسکریپت" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          پایه جاوا اسکریپت
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hello_world/" class="md-nav__link">
+        سلام دنیا!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure/" class="md-nav__link">
+        ساختار کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_strict/" class="md-nav__link">
+        حالت سخت‌ گیرانه
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        متغیر ها
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          دیتا تایپ‌ها
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        دیتا تایپ‌ها
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    عدد(Number)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bigint" class="md-nav__link">
+    اعداد بزرگ (BigInt)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    مشکلات سازگاری
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    رشته(String)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    تایپ منطقی‌(Boolean)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    مقدار null
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undefined" class="md-nav__link">
+    مقدار undefined
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objects-symbols" class="md-nav__link">
+    تایپ  Objects و Symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeof" class="md-nav__link">
+    عملگر typeof
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    خلاصه
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alert-prompt-confirm/" class="md-nav__link">
+        تعامل با کاربر
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type-conversions/" class="md-nav__link">
+        تبدیل تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    عدد(Number)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bigint" class="md-nav__link">
+    اعداد بزرگ (BigInt)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    مشکلات سازگاری
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    رشته(String)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    تایپ منطقی‌(Boolean)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    مقدار null
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undefined" class="md-nav__link">
+    مقدار undefined
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objects-symbols" class="md-nav__link">
+    تایپ  Objects و Symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeof" class="md-nav__link">
+    عملگر typeof
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    خلاصه
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">دیتا تایپ در جاوااسکریپت</h1>
+<p>یک مقدار توی جاوااسکریپت همیشه از یک تایپ خاص هست به عنوان مثال رشته یا یک عدد</p>
+<p>در جاوااسکریپت هشت تایپ داده اصلی وجود داره، اینجا ما به طور کلی به آنها خواهیم پرداخت و در فصل های بعدی به طور مفصل در مورد هر یک صحبت خواهیم کرد.</p>
+<p>ما میتونیم هر تایپ رو توی یک متغیر قرار بدیم، به عنوان مثال یک متغیر میتونه اول یک رشته باشه و بعد یک عدد رو ذخیره کنه</p>
+<pre><code>// no erorr
+let message = &quot;hello&quot;;
+message = 123456;
+</code></pre>
+<p>زبان های برنامه‌نویسی که اجازه این کار و به ما میدن مثل جاوااسکریپت «تایپ پویا» میگن بهشون به این معنی که انواع دیتا تایپ‌ها وجود دارن اما متغیر‌ها به هیچ کدوم از اونا محدود نیستن.</p>
+<h3 id="number">عدد(Number)</h3>
+<pre><code>let n = 123;
+n = 12.345;
+</code></pre>
+<p>تایپ عدد هر دو مقدار عدد صحیح و اعشاری رو نشون میده </p>
+<p>عملگر های زیاید برای کار با عدد وجود داره مثل <code>ضرب *</code> ،<code>تقسیم /</code> ،<code>جمع +</code>،<code>تفریق −</code> و غیره ...</p>
+<p>علاوه بر عدد های عادی، به اصطلاح «<code>مقادیر ویژه عددی</code>» وجود دارد که متعلق به این دیتا تایپ عدد هستن:</p>
+<p><code>Infinity</code> , <code>-Infinity</code>, <code>NaN</code> </p>
+<p>بی‌نهایت (Infinity) نشان دهنده  <a href="https://fa.wikipedia.org/wiki/%D8%A8%DB%8C%E2%80%8C%D9%86%D9%87%D8%A7%DB%8C%D8%AA">Infinity</a> ∞ ریاضی هست این مقدار خاص هست که از هر عددی بیشتره </p>
+<p>می‌تونیم اونو در نتیجه تقسیم بر صفر بدست بیاریم:</p>
+<pre><code>alert( 1 / 0 ); // Infinity
+</code></pre>
+<p>یا فقط مستقیم بهش اشاره کنیم:‌</p>
+<pre><code>alert( Infinity ); // Infinity
+</code></pre>
+<p>مقدار (NaN) نشان دهنده یک خطای محاسباتی هست، این یک نتیجه از عملیات ریاضی نادرست یا تعریف نشده هست به عنوان مثال:‌</p>
+<pre><code>alert( &quot;not a number&quot; / 2 ); // NaN, such division is erroneous
+</code></pre>
+<p>هر عملی بر روی NaN نتیجه NaN خواهد داشت :</p>
+<pre><code>alert( &quot;not a number&quot; / 2 + 5 ); // NaN
+
+</code></pre>
+<p>در نتیجه اگر NaN توی عملیات ریاضیاتی‌ای وجود داشته باشه، بر روی تمام معادله تاثیر میذاره (نتیجه معادله برابر NaN خواهد بود)</p>
+<p>عملیات ریاضی در جاوا اسکریپت امن هست 
+ما هر نوع عملی میتونیم انجام بدیم مثل تقسیم بر صفر. اسکریپت ما هیچ‌وقت با خطا مواجه نخواهد شد. در بدترین حالت NaN را به عنوان نتیجه خواهیم گرفت</p>
+<h3 id="bigint">اعداد بزرگ (BigInt)</h3>
+<p>توی جاوااسکریپت تایپ Number نمیتونه اعداد بزرگ‌تر از <code>(۱ - ۵۳^۲ )</code> یعنی <code>(9007199254740991)</code>  رو نشون بده و کمتر از <code>(۱−۵۳^۲)−</code> برای اعداد منفی</p>
+<p>برای بیشتر اهداف که کاملا به اندازه کافی هست، اما گاهی اوقات ما نیاز اعداد واقعا بزرگ داریم، به عنوان مثال، برای رمزنگاری یا زمان سنج با دقت میکرو ثانیه</p>
+<p>تایپ BigInt اخیرا به زبان اضافه شده تا اعداد صحیح با طول دلخواه رو نشون بده </p>
+<p>یک مقدار BigInt با اضافه کردن حرف n به اخر یک عدد صحیح ایجاد میشه </p>
+<pre><code>// the &quot;n&quot; at the end means it's a BigInt
+const bigInt = 1234567890123456789012345678901234567890n;
+</code></pre>
+<p>از اونجایی که BigInt به ندرت استفاده میشه اینجا اون رو توضیح نمیدیم اما یک فصل جداگانه رو بهش اختصاص دادیم وقتی به چنین اعداد بزرگی احتیاج دارین اونجا رو بخونین 
+(توی قسمت های بعدی قرار میدم براتون)</p>
+<h3 id="_2">مشکلات سازگاری</h3>
+<p>در حال حاضر BigInt توسط مرورگر های FireFox/Chrome/Edge/Safari پشتیبانی میشه و همون طور که میتونین حدس بزنین مرورگر IE پشتیبانیش نمیکنه </p>
+<p>توی <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#browser_compatibility">این لینک</a> هم میتونین چک کنین که دقیقا روی چه ورژن هایی از مرورگر ها پشتیبانی میشه</p>
+<h3 id="string">رشته(String)</h3>
+<p>یه رشته توی جاوااسکریپت باید بین دو تا کوتِیشِن باشه</p>
+<pre><code>let str = &quot;Hello&quot;;
+let str2 = 'Single quotes are ok too';
+let phrase = `can embed another ${str}`;
+</code></pre>
+<p>توی جاوا اسکریپت سه نوع کوتِیشِن داریم :</p>
+<ul>
+<li>Double qoutes مانند "Hello".</li>
+<li>Single qoutes مانند 'Hello'.</li>
+<li>Backticks مانند <code>`Hello`</code>.</li>
+</ul>
+<p>دابل و سینگل‌ کوتِیشِن ساده هستن و فرقی ندارن با هم دیگه توی جاوااسکریپت </p>
+<p>بک‌تیک توسعه یافته ساختار کوتِیشِن هست، به ما این اجازه رو میده تا متغیر و یا یه سری عملیات‌ها رو با قرار دادن اونا در <code>{...}$</code> توی یک رشته قرار بدیم، به عنوان مثال:‌</p>
+<pre><code>let name = &quot;John&quot;;
+
+// embed a variable
+alert( `Hello, ${name}!` ); // Hello, John!
+
+// embed an expression
+alert( `the result is ${1 + 2}` ); // the result is 3
+</code></pre>
+<p>عبارت داخل  <code>{...}$</code> محاسبه میشه و نتیجه‌اش به بخشی از رشته تبدیل میشه ما میتونیم هر چیزی رو توش قرار بدیم مثل متغیر یا یک عبارت مثل ۱ + ۲ یا یه چیز پیچیده تر</p>
+<p>لطفا توجه کنین این قابلیت فقط زمانی هست که از بک‌تیک استفاده کنین توی دابل و سینگل کوتِیشِن این قابلیت وجود نداره</p>
+<pre><code>alert( &quot;the result is ${1 + 2}&quot; ); // the result is ${1 + 2} (double quotes do nothing)
+</code></pre>
+<p>در مورد رشته‌ها توی آموزش های بعدی بیشتر توضیح میدیم</p>
+<p>تایپ کارکتری وجود نداره 
+در برخی زبان‌ها یه تایپ خاص به اسم «character» وجود داره که برای یک کاراکتر هست.
+به عنوان مثال در زبان برنامه‌نویسی C و Java این نوع «char» نام گذاری شده</p>
+<p>در جاوااسکریپت، این مدل تایپ رو نداریم. فقط یه تایپ String داریم، یک String میتونه خالی باشه یا یک کاراکتر داشته باشه و یا خیلی بیشتر از یک کاراکتر</p>
+<h3 id="boolean">تایپ منطقی‌(Boolean)</h3>
+<p>تایپ منطقی فقط دو تا مقدار True و False داره 
+این تایپ معمولا برای نگهداری مقدار های بله/خیر استفاده میشه، true یعنی «بله،‌درست» و false یعنی «نه، نادرست»</p>
+<p>برای نمونه :</p>
+<pre><code>let nameFieldChecked = true; // yes, name field is checked
+let ageFieldChecked = false; // no, age field is not checked
+</code></pre>
+<p>مقدار های منطقی همچنین میتونین از نتیجه یک مقایسه هم باشن:</p>
+<pre><code>let isGreater = 4 &gt; 1;
+alert( isGreater ); // true (the comparison result is &quot;yes&quot;)
+</code></pre>
+<p>که مثال بالا یعنی ۴ بزرگتر از ۱ هست؟ و جوابش میشه «بله» یا همون true</p>
+<p>در مورد Boolean ها در بخش‌های بعدی صحبت خواهیم کرد.</p>
+<h3 id="null">مقدار null</h3>
+<p>مقدار null به هیچ کدوم از دیتا تایپ هایی که بالا گفتیم ربطی نداره</p>
+<p>این یک تایپ جداگانه هست که فقط شامل مقدار null هست :</p>
+<pre><code>let age = null;
+</code></pre>
+<p>در جاوااسکریپت مثل بعضی از زبان های برنامه نویسی null به هیچ آبجکتی اشاره نمیکنه یا اشاره‌گر به null نیست </p>
+<p>فقط یه مقدار خاص هست که نشون‌دهنده «هیچی» ، «خالی» و یا «مقدار ناشناخته» هست
+کد بالا یعنی مقدار سن ناشناخته هست</p>
+<h3 id="undefined">مقدار undefined</h3>
+<p>مقدار undefined هم مثل null جدا از بقیه هست و ربطی نداره به هیچ تایپی</p>
+<p>معنی undefined یعنی «<code>مقداری هنوز اختصاص داده نشده</code>»
+اگه یک متغیر تعریف بشه اما مقداردهی نشه اون موقع مقدارش undefined هست </p>
+<pre><code>let age;
+
+alert(age); // shows &quot;undefined&quot;
+</code></pre>
+<p>از نظر فنی میشه به یک متغیر مقدار undefined رو اختصاص داد :</p>
+<pre><code>let age = 100;
+
+// change the value to undefined
+age = undefined;
+
+alert(age); // &quot;undefined&quot;
+</code></pre>
+<p>اما ما این کار رو توصیه نمی‌کنیم و برای تخصیص مقدار "خالی" یا "ناشناخته" از null استفاده می‌کنیم و از undefined برای بررسی اینکه به متغیری مقدار تخصیص یافته یا خیر استفاده می‌کنیم</p>
+<h3 id="objects-symbols">تایپ  Objects و Symbols</h3>
+<p>تایپ object یک تایپ خاص هست </p>
+<p>به تایپ های دیگه میگن تایپ اولیه چون که مقدار اونا فقط میتونه یه چیز باشه (مثل رشته، عدد یا بقیه چیزا) در مقابل object ها برای ذخیره مجموعه‌ای از داده ها و موجودیت های پیچیده‌تر استفاده می‌شن 
+بعد از اینکه در مورد تایپ های اولیه بیشتر مطالعه کردیم، در مورد object ها بیشتر خواهیم آموخت</p>
+<p>نوع symbol برای ایجاد یک شناسه منحصر به فرد برای object ها مورد استفاده قرار میگیره. برای تکمیل عنوان این بخش این نوع داده را نیز در اینجا گفتیم ولی بهتره جزئیات اون رو در بخش‌های بعدی بررسی کنیم</p>
+<h3 id="typeof">عملگر typeof</h3>
+<p>عملگر <code>typeof</code> تایپ یک مقدار رو برمیگردونه و این خیلی به درد میخوره وقتی که ما میخوایم روی مقدارهایی با تایپ های مختلف عملیات خاصی انجام بدیم یا این که فقط بخوایم چک کنیم که تایپ فلان مقدار چیه </p>
+<p>به دو صورت میتونیم ازش استفاده کنیم:
+۱. به صورت عملگر : <code>typeof x</code>
+۲. به صورت فانکشن: <code>typeof(x)</code></p>
+<p>به عبارت دیگه این هم بدون پرانتز میشه ازش استفاده کرد و هم با پرانتز، نتیجه‌اش هم یکسانه </p>
+<p>وقتی که <code>typeof x</code> رو استفاده میکنم نتیجه‌اش یه رشته هست که تایپ مقدار x رو برامون برمیگردونه </p>
+<pre><code>typeof undefined // &quot;undefined&quot;
+
+typeof 0 // &quot;number&quot;
+
+typeof 10n // &quot;bigint&quot;
+
+typeof true // &quot;boolean&quot;
+
+typeof &quot;foo&quot; // &quot;string&quot;
+
+typeof Symbol(&quot;id&quot;) // &quot;symbol&quot;
+
+typeof Math // &quot;object&quot;  (1)
+
+typeof null // &quot;object&quot;  (2)
+
+typeof alert // &quot;function&quot;  (3)
+</code></pre>
+<p>سه خط آخر ممکنه نیاز به توضیحات اضافی داشته باشند:</p>
+<ol>
+<li>
+<p>آبجکت <code>Math</code> اصطلاحا <code>built-in</code> (از پیش نوشته شده در هسته زبان) هست که عملیات متنوع ریاضیاتی در اختیار ما قرار میده. در اینجا صرفا یک مثال از اون رو نمایش دادیم و در بخش Numbers با اون بیشتر آشنا خواهیم شد</p>
+</li>
+<li>
+<p>خروجی <code>typeof null</code> همونطور که می‌بینید <code>"object"</code> هست و این صحیح نیست. این یک خطا در نوع کار <code>typeof</code> هست که به منظور سازگاری باقی مونده مطمئنا <code>null</code> یک <code>object</code> نیست. خودِ <code>null</code> یکی از انواع داده در جاوا اسکریپته</p>
+</li>
+<li>
+<p>تایپ <code>alert</code> یک فانکشن هست چرا که alert یکی از فانکشن‌های جاوا اسکریپت هست ما در بخش‌های بعدی با فانکشن‌ها بیشتر آشنا میشیم و خواهیم آموخت که نوعی تحت عنوان فانکشن نداریم و خودِ فانکشن‌ها در اصل از نوعِ object هستن اما عملگر <code>typeof</code> با اونا به طرز دیگه‌ای برخورد می‌کنه</p>
+</li>
+</ol>
+<h3 id="_3">خلاصه</h3>
+<p>۸ تا تایپ ابتدایی توی جاوااسکریپت وجود داره </p>
+<ul>
+<li>
+<p>اعداد(<code>number</code>) برای هر نوع عددی استفاده میشه صحیح، اعشاری </p>
+</li>
+<li>
+<p>اعداد بزرگ(<code>bigint</code>) برای اعداد صحیح با طول دلخواه استفاده میشه </p>
+</li>
+<li>
+<p>رشته(<code>string</code>) برای مقدار های رشته‌ای استفاده میشه یک رشته میتونه خالی باشه یا یک 
+کاراکتر داشته باشه یا بیشتر از یک کاراکتر، تایپ جداگانه‌ای برای کاراکتر وجود نداره </p>
+</li>
+<li>
+<p>مقدار منطقی(<code>boolean</code>) برای صحیح/غلط یا همون <code>True</code> , <code>False</code></p>
+</li>
+<li>
+<p>مقدار <code>null</code> برای مقدار های ناشناخته - خودش یه تایپ هست و به بقیه تایپ ها ربطی نداره</p>
+</li>
+<li>
+<p>مقدار <code>undefined</code> برای مقدار های اختصاص داده نشده - این هم خودش یه تایپه و بقیه تایپ ها ربطی نداره </p>
+</li>
+<li>
+<p>مقدار <code>obejct</code> برای ساختمان داده های پیچیده‌تر </p>
+</li>
+<li>
+<p>مقدار <code>symbol</code> برای شناسه های یکتا</p>
+</li>
+<li>
+<p>عملگر typeof به ما این اجازه رو میده تا ببینیم توی متغیر چه نوع داده‌ای ذخیره شده</p>
+</li>
+<li>دو نوع میشه ازش استفاده کرد :<code>typeof x</code> یا <code>typeof(x)</code></li>
+<li>یک رشته برمیگردونه که اسم تایپ اون مقدار هست مثل <code>"string"</code></li>
+<li>برای <code>null</code> مقدار <code>"object"</code> رو برمیگردونه - این یه ارور توی زبان هست و واقعا اینجوری نیست و آبجکت نیست </li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../variables/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                قبلی
+              </span>
+              متغیر ها
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../alert-prompt-confirm/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                بعدی
+              </span>
+              تعامل با کاربر
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "search.config.lang": "en", "search.config.pipeline": " ", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u062c\u0633\u062a\u062c\u0648", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>

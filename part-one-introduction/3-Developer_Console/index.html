@@ -1,0 +1,663 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>کنسول مرورگر - ترجمه سایت javascript.info</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font-family:"";--md-code-font-family:""}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#developer-console" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-header__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ترجمه سایت javascript.info
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              کنسول مرورگر
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="جستجو" placeholder="جستجو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ترجمه سایت javascript.info" class="md-nav__button md-logo" aria-label="ترجمه سایت javascript.info" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ترجمه سایت javascript.info
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        صفحه اصلی
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        مقدمات
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="مقدمات" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          مقدمات
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0-An_Introduction_to_JavaScript/" class="md-nav__link">
+        مقدمه‌ای بر جاوا اسکریپت
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-Manuals_Specifications/" class="md-nav__link">
+        معرفی منابع مفید
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-Code_Editors/" class="md-nav__link">
+        ویرایشگر کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          کنسول مرورگر
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        کنسول مرورگر
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#google-chrome" class="md-nav__link">
+    گوگل کروم (Google Chrome)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    اگه بخوام چند خط بنویسم و بعد اجرا کنم چیکار کنم ؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firefox-edge" class="md-nav__link">
+    فایرفاکس(Firefox)، اج(Edge) و بقیه مرورگرا
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safari" class="md-nav__link">
+    سَفاری (Safari)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    خلاصه
+  </a>
+  
+    <nav class="md-nav" aria-label="خلاصه">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    خب خب بالاخره محیط کاریمون آماده شد. توی قسمت بعدی میریم سراغ جاوا اسکریپت
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        پایه جاوا اسکریپت
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="پایه جاوا اسکریپت" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          پایه جاوا اسکریپت
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/hello_world/" class="md-nav__link">
+        سلام دنیا!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/structure/" class="md-nav__link">
+        ساختار کد
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/use_strict/" class="md-nav__link">
+        حالت سخت‌ گیرانه
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/variables/" class="md-nav__link">
+        متغیر ها
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/data-types/" class="md-nav__link">
+        دیتا تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/alert-prompt-confirm/" class="md-nav__link">
+        تعامل با کاربر
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part-two-javascript-fundamentals/type-conversions/" class="md-nav__link">
+        تبدیل تایپ‌ها
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#google-chrome" class="md-nav__link">
+    گوگل کروم (Google Chrome)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    اگه بخوام چند خط بنویسم و بعد اجرا کنم چیکار کنم ؟
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firefox-edge" class="md-nav__link">
+    فایرفاکس(Firefox)، اج(Edge) و بقیه مرورگرا
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safari" class="md-nav__link">
+    سَفاری (Safari)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    خلاصه
+  </a>
+  
+    <nav class="md-nav" aria-label="خلاصه">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    خب خب بالاخره محیط کاریمون آماده شد. توی قسمت بعدی میریم سراغ جاوا اسکریپت
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="developer-console">کنسول توسعه دهنده در مرورگر (Developer Console) | عیب‌یابی کد های جاوا اسکریپت</h1>
+<p><img alt="" src="https://files.virgool.io/upload/users/217114/posts/ajnctbqq5dyf/sq1x3nedq4y5.png" /></p>
+<p>برنامه‌نویسی همیشه توش خطا هست. شما به احتمال زیاد اشتباه می‌کنین ... اوه من دارم از چی صحبت میکنم ؟!!</p>
+<p>اشتباه کردن یه چیزیه توی برنامه نویسی که حداقل اگه یه انسان بخواد یه برنامه‌ بنویسه اشتباه میکنه، مگه این که یه ربات بخواد این کار و انجام بده.</p>
+<p>اما توی مرورگر کاربرا به صورت پیش فرض هیچ خطایی نمی‌بینن پس اگه یه چیزی اشتباه باشه توی اسکریپتی که نوشتیم، ما نمیتونم ببینیم مشکل از چیه تا بتونیم حلش کنیم</p>
+<p>برای دیدن خطاها و استفاده از اطلاعات مفید درباره اسکریپت‌ها قسمت "developer tools" (ابزارهای توسعه) توی مرورگرا جاسازی شده</p>
+<p>بیشتر توسعه دهنده‌ها برای توسعه میرن سمت Chrome یا Firefox چون این مرورگرا بهترین ابزارهای توسعه رو دارن بقیه مرورگرا هم ابزارهای توسعه رو دارن، بعضی وقتا یه سری ویژگی خاص اضافه کردن اما معمولا با Chrome و Firefox بازی میکنن و زیاد فرق خاصی ندارن</p>
+<p>بنابراین بیشتر توسعه دهنده‌ها یه مرورگر مورد علاقه دارن و اگه یه مشکل توی یه مرورگر خاص وجود داشته باشه از بقیه مرورگرا استفاده میکنن</p>
+<p>ابزارهای توسعه خیلی قوی هستن، اونا خیلی قابلیت زیادی دارن برای شروع میریم سراغ این که چطوری بازشون کنیم و به خطاها یه نگاهی بندازیم و بعدشم چند تا دستور جاوا اسکریپت اجرا کنیم</p>
+<h3 id="google-chrome">گوگل کروم (Google Chrome)</h3>
+<p>این صفحه رو باز کنین (<a href="https://mmasoudih.github.io/javascript.info/examples/bug.html">لینک</a>)</p>
+<blockquote>
+<p>اگه توی باز کردنش مشکی داشتین از یه پروکسی یا فیلترشکن استفاده کنین</p>
+</blockquote>
+<p>یه ارور جاوا اسکریپت توی این صفحه هست. اما بازدید کننده سایت نمیتونه اون رو ببینه پس بیاین تا ابزار های توسعه رو باز کنیم و اروره رو ببینیم</p>
+<p>دکمه <code>F12</code> یا اگه از مک(<em>Mac</em>) استفاده میکنین<code>Cmd+Opt+J</code> رو بزنین ابزار های توسعه به صورت پیش‌فرض روی سر‌برگ <code>Console</code> باز میشه یه چیزی شبیه به این عکس باید باشه:</p>
+<p><img alt="عکسی از ارور داخل کنسول مرورگر کروم" src="https://files.virgool.io/upload/users/217114/posts/ajnctbqq5dyf/lsv7ywg3qwlt.png" /></p>
+<p>عکسی از ارور داخل کنسول مرورگر کروم</p>
+<p>این شکل بستگی داره به نسخه مرورگرتون ممکنه فرق کنه اما به عکس بالا باید شبیه باشه</p>
+<p>اینجا ما میتونیم یه پیغام قرمز رنگ ببینیم، اسکریپت یه دستور ناشناخته "<em>lalala</em>" رو داره نشون میده سمت راست یه لینک قابل کلیک شدن هست که به جایی که این خطا رخ داده داره اشاره می‌کنه که توی عکس بالا گفته <code>bug.html:12</code> و این یعنی توی خط 12 فایل <code>bug.html</code> یه مشکلی هست</p>
+<p>زیر متن خطا یه علامت آبی <code>&lt;</code> هست که داره محیط متنی (<code>command line</code>) رو نشون میده جایی که ما میتونیم دستورات جاوا اسکریپت رو تایپ کنیم و با زدن دکمه <code>Enter</code> اونا رو اجرا کنیم</p>
+<p>حالا ما میتونیم خطا ها رو ببینیم، و برای شروع این کافیه، ما بعدا به ابزار های توسعه بر می‌گردیم و توضیحات بیشتری رو توی قسمت (عیب یابی در کروم) بهتون میدیم</p>
+<blockquote>
+<p>هنوز این قسمت رو ترجمه نکردم به محض این که ترجمه‌اش تموم شد لینکش رو میذارم</p>
+</blockquote>
+<h3 id="_1">اگه بخوام چند خط بنویسم و بعد اجرا کنم چیکار کنم ؟</h3>
+<p>معمولا وقتی ما یه خط کد توی کنسول مینویسیم و دکمه<code>Enter</code> رو میزنیم و کدی که نوشتیم اجرا میشه</p>
+<p>برای این که بخوایم چند خط بنویسم و بعد اجراش کنیم باید <code>Shift+Enter</code> بزنیم و اینجوری میتونیم کد های طولانی تری بنویسم</p>
+<h3 id="firefox-edge">فایرفاکس(Firefox)، اج(Edge) و بقیه مرورگرا</h3>
+<p>توی بیشتر مرورگرا با استفاده از <code>F12</code> میشه ابزار های توسعه رو باز کرد ظاهر اونا کاملا مشابه هست وقتی که یکی از این ابزار ها رو بدونین (<em>میتونین با کروم شروع کنین</em>) بعدش خیلی راحته براتون تا با بقیه مرورگرا هم کار کنین</p>
+<h3 id="safari">سَفاری (Safari)</h3>
+<p>سَفاری (<em>مرورگری برای مک هست و توسط ویندوز/لینوکس پشتیبانی نمیشه</em>) یه مقدار اینجا فرق میکنه ما نیاز داریم تا گزینه "<code>Develop menu</code>" رو فعال کنیم</p>
+<p>اول <code>Preferences</code> رو باز کنین و به سربرگ <code>Advanced</code> برین یه تیک پایین صفحه هست اون رو باید فعال کنین حالا برای باز و بسته کردن کنسول میتونین از دکمه های <code>Cmd+Opt+C</code> استفاده کنین</p>
+<p><img alt="عکسی از تنظیمات مرورگر سَفاری" src="https://files.virgool.io/upload/users/217114/posts/ajnctbqq5dyf/mkrypxkgfbbc.png" /></p>
+<p>عکسی از تنظیمات مرورگر سَفاری</p>
+<p>همچنین، توجه کنین که منوی بالا به نام "<code>Develop</code>" ظاهر میشه و اون دستورات و گزینه های زیاده داره</p>
+<h3 id="_2">خلاصه</h3>
+<ul>
+<li>ابزار های توسعه به ما اجازه میدن تا بتونیم خطاها رو ببینیم، دستورات رو اجرا کنیم، متغیرها رو بررسی کنیم و خیلی چیزای دیگه ...</li>
+<li>ابزار های توسعه رو توی بیشتر مرورگرا روی ویندوز میشه با <code>F12</code> باز کرد و کروم برای مک رو با فشردن <code>Cmd+Opt+J</code> و همچنین مرورگر سَفاری هم با <code>Cmd+Opt+C</code> (<em>البته باز اول فعالش کنین</em>) میشه باز کرد</li>
+</ul>
+<h4 id="_3">خب خب بالاخره محیط کاریمون آماده شد. توی قسمت بعدی میریم سراغ جاوا اسکریپت</h4>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../2-Code_Editors/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                قبلی
+              </span>
+              ویرایشگر کد
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../part-two-javascript-fundamentals/hello_world/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                بعدی
+              </span>
+              سلام دنیا!
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "search.config.lang": "en", "search.config.pipeline": " ", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u062c\u0633\u062a\u062c\u0648", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>

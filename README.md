@@ -1,6 +1,11 @@
 آدرس [مخزن اصلی](https://github.com/javascript-tutorial/fa.javascript.info) ترجمه.
 
 
+آدرس سایت فارسی شده: 
+[fa.javascript.info](https://fa.javascript.info)
+
+
+
 <div dir="auto">
                ترجمه سایت javascript.info اگه دوست داشتین مشارکت کنین :)
                
@@ -38,6 +43,9 @@
 - [x] [Type Conversions](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/type-conversions/)
 
 [javascript.info](https://javascript.info)
+
+[fa.javascript.info](https://fa.javascript.info)
+
 
 
 

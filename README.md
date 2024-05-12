@@ -1,3 +1,4 @@
+آدرس [مخزن اصلی](https://github.com/javascript-tutorial/fa.javascript.info) ترجمه.
 
 
 <div dir="auto">
@@ -37,5 +38,7 @@
 - [x] [Type Conversions](https://mmasoudih.github.io/javascript.info/part-two-javascript-fundamentals/type-conversions/)
 
 [javascript.info](https://javascript.info)
+
+
 
 
